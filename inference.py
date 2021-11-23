@@ -1,5 +1,3 @@
-!pip install matplotlib
-
 import streamlit as st
 import requests
 import base64
