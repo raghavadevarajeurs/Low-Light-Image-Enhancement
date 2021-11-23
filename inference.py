@@ -13,6 +13,9 @@ st.subheader('Upload a png/ jpeg file to improve the image resolution')
 
 def upload_improve_resolution():
     uploaded_file = st.file_uploader("Choose a file")
+    
+    plt.imshow(uploaded_file)
+    st.image(image, caption='Low resolution Input')
 
     if uploaded_file is not None:
         # To read file as bytes:
