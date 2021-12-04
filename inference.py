@@ -14,7 +14,7 @@ st.subheader('Upload a png/ jpeg file to improve the image resolution')
 def upload_improve_resolution():
     uploaded_file = st.file_uploader("Choose a file")
     
-    col1,col2 = st.beta_columns(2) 
+    col1,col2 = st.columns(2) 
     
     if uploaded_file is not None:
         # To read file as bytes:
